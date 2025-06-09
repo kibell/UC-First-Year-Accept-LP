@@ -1,0 +1,24 @@
+.snhu-logo-footer{
+    height: auto;
+    width: 100%;
+  }
+
+  footer {
+    background-color: #00244E !important;
+    color: #FFFFFF;
+  }
+  
+
+  footer p, footer a {
+    color: #FFFFFF;
+  }
+
+  footer a {
+    font-size: $font-size-md;
+  }
+
+  footer.mobile {
+    display: none;
+  }
+
+  

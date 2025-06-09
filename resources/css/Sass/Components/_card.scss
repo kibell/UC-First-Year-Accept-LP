@@ -1,0 +1,31 @@
+
+
+.card-header {
+font-size: $font-size-xl;
+font-weight: 700;    
+color: $heritage;
+font-family: $inter; 
+}
+
+.list-group-item {
+    border: none
+}
+
+.card-info-header {
+    color: $heritage;
+   font-family: $inter; 
+    font-weight: 700;
+    font-size: $font-size-md;
+}
+
+.card-paragraph {
+    font-weight: 400;
+    font-size: $font-size-md;
+    font-family: $inter; 
+}
+
+.min-h-18
+{
+min-height: 18rem;
+
+}

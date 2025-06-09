@@ -1,0 +1,54 @@
+
+.btn {
+    padding: 0.6rem 0.9rem;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: $heritage;
+
+  &:hover {
+  background-color: $primary-hover;
+  border-color: $primary-hover;
+  color: $heritage;
+  }
+}
+
+
+.btn-secondary {
+  background-color: $heritage;
+  border-color: $heritage;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: $heritage;
+}
+
+//Side chat button
+.chat-btn{
+  position: fixed;
+  transform: rotate(-90deg);
+  right: -22px;
+  top: 70vh;
+  z-index: 1;
+  font-weight: 600;
+  font-size: var(--font-size-md);
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+
+  .mobile-btn-w {
+    width: 100%;
+    margin-bottom: .275rem;
+  }
+
+}

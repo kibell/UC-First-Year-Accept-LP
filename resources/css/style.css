@@ -1,0 +1,223 @@
+/* Font size */
+/* 18px */
+/*20 px*/
+/*24px h2 tag */
+/* 32px */
+/* 36px */
+/* 40px  h1 tag* /
+$font-size-7xl: 4rem; /*64px */
+.ink-blue {
+  color: #00244e;
+}
+
+.heritage {
+  color: #0a3370;
+}
+
+.bg-lightgray {
+  background: #F9F9F9;
+}
+
+.accordion-header {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #0a3370;
+}
+
+.accordion-button.collapsed::after {
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-size: 1rem;
+  color: #0a3370;
+  float: right;
+  background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  color: #0a3370;
+  float: right;
+  font-size: 1.25rem;
+  background-image: none;
+  transform: none;
+}
+
+.btn {
+  padding: 0.6rem 0.9rem;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #fdb913;
+  border-color: #fdb913;
+  color: #0a3370;
+}
+.btn-primary:hover {
+  background-color: #fee097;
+  border-color: #fee097;
+  color: #0a3370;
+}
+
+.btn-secondary {
+  background-color: #0a3370;
+  border-color: #0a3370;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #0a3370;
+}
+
+.chat-btn {
+  position: fixed;
+  transform: rotate(-90deg);
+  right: -22px;
+  top: 70vh;
+  z-index: 1;
+  font-weight: 600;
+  font-size: var(--font-size-md);
+}
+
+@media only screen and (max-width: 576px) {
+  .mobile-btn-w {
+    width: 100%;
+    margin-bottom: 0.275rem;
+  }
+}
+.card-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a3370;
+  font-family: "Inter", sans-serif;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.card-info-header {
+  color: #0a3370;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-paragraph {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.min-h-18 {
+  min-height: 18rem;
+}
+
+.snhu-logo-footer {
+  height: auto;
+  width: 100%;
+}
+
+footer {
+  background-color: #00244E !important;
+  color: #FFFFFF;
+}
+
+footer p, footer a {
+  color: #FFFFFF;
+}
+
+footer a {
+  font-size: 1rem;
+}
+
+footer.mobile {
+  display: none;
+}
+
+.navbar {
+  background-color: #00244e;
+}
+
+.primary-link {
+  color: #fdb913;
+  font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar > .container {
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+h1 {
+  color: #0a3370;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #0a3370;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+h3 {
+  color: #00244e;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+p,
+li {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a.head-link {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.head-link:hover,
+a.head-link:focus {
+  -webkit-text-decoration: underline #70abdb 2px;
+          text-decoration: underline #70abdb 2px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+a {
+  color: #0a3370;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=style.css.map */

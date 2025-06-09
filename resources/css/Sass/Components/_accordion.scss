@@ -1,0 +1,27 @@
+
+
+.accordion-header {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: $inter;
+    color: $heritage;
+  }
+  
+  .accordion-button.collapsed::after {
+    font-family: "FontAwesome";
+    content: "\f067";
+    font-size: 1rem;
+    color: #0a3370;
+    float: right;
+    background-image: none;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    font-family: "FontAwesome";
+    content: "\f068";
+    color: #0a3370;
+    float: right;
+    font-size: 1.25rem;
+    background-image: none;
+    transform: none;
+  }

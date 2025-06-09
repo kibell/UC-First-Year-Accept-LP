@@ -1,0 +1,27 @@
+
+
+
+ .navbar {
+    background-color:$ink-blue;
+  }
+
+  .primary-link {
+    color: $primary;
+    font-weight: 400 !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+
+    .navbar>.container {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+    
+
+  }
+
+  

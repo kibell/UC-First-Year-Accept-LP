@@ -1,0 +1,59 @@
+
+h1 {
+  color: $heritage;
+  font-size: $font-size-6xl;
+  font-weight: bold;
+  font-family: $inter;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: $heritage;
+  font-weight: 700; 
+  font-size: $font-size-6xl;
+  font-family: $inter;
+}
+
+
+h3 {
+  color: $ink-blue;
+  font-size: $font-size-2xl;
+  font-family: $inter;
+  font-weight: 900;
+}
+
+p,
+li {
+  font-family: $inter;
+  font-size: $font-size-md;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.5;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a.head-link {
+  font-size: $font-size-md;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: $inter;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.head-link:hover,
+a.head-link:focus {
+  text-decoration: underline #70abdb 2px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+a {
+color: $heritage;
+font-weight: 700;
+text-decoration: none;
+}
