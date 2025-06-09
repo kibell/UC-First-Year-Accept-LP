@@ -4,8 +4,8 @@
 /*24px h2 tag */
 /* 32px */
 /* 36px */
-/* 40px  h1 tag* /
-$font-size-7xl: 4rem; /*64px */
+/* 40px  h1 tag*/
+/*48px */
 .ink-blue {
   color: #00244e;
 }
@@ -45,7 +45,7 @@ $font-size-7xl: 4rem; /*64px */
 }
 
 .btn {
-  padding: 0.6rem 0.9rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 3px;
   font-size: 15px;
   font-weight: 700;
@@ -161,7 +161,7 @@ footer.mobile {
 }
 h1 {
   color: #0a3370;
-  font-size: 2.5rem;
+  font-size: 2.975rem;
   font-weight: bold;
   font-family: "Inter", sans-serif;
 }
@@ -175,10 +175,10 @@ h2 {
 }
 
 h3 {
-  color: #00244e;
-  font-size: 1.5rem;
+  color: #0a3370;
+  font-size: 2rem;
   font-family: "Inter", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 p,
@@ -187,7 +187,7 @@ li {
   font-size: 1rem;
   font-weight: 400;
   color: #666666;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 li {
@@ -220,4 +220,135 @@ a {
 
 body {
   font-family: "Inter", sans-serif;
+  word-break: break-word;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-normal {
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+}
+
+.welcome-banner {
+  background-image: url("https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/4ec7418d-e5ed-48d0-b102-b8ca2e489c20.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome-message {
+  background-color: #2066a2;
+  min-height: 100%;
+  padding: 0 2rem;
+  border-radius: 0 20px 0 20px;
+  box-shadow: 13px 16px 21px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.academic-message {
+  background-color: #0a3370;
+  padding: 2rem;
+  border-radius: 20px 0 20px 0;
+  box-shadow: 13px 16px 21px rgba(0, 0, 0, 0.6);
+}
+
+.snhu-bound-wrapper {
+  position: relative;
+  margin: auto;
+}
+
+.snhu-bound-shadow {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 20px 0 20px;
+  border: 2px solid #fdb913;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.snhu-bound-content {
+  position: relative;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0 20px 0 20px;
+  z-index: 1;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00244E;
+}
+
+.admission-video {
+  width: 80%;
+}
+
+.yellow-shape {
+  top: 2rem;
+  left: 9rem;
+  z-index: -1;
+  width: 70%;
+  position: absolute;
+}
+
+.checklist-wrapper {
+  border: 1px solid #dcdcdc;
+  padding: 1rem;
+}
+
+.admin-title {
+  color: #0a3370;
+  font-weight: 700;
+}
+
+.scholarship-section {
+  background-image: linear-gradient(270deg, rgba(0, 85, 154, 0.85) 0%, rgb(0, 36, 78) 100%), url("https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/277f58e7-5163-4fdf-8f0b-4d1efd9a25c9.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 30rem;
+}
+
+.page-link {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #0d6efd;
+}
+
+.nav-tabs .nav-link.active {
+  color: #0a3370;
+  font-weight: 700;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.nav-tabs .nav-link {
+  color: #0a3370;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .snhu-bound-content {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .admission-img-wrapper {
+    margin-bottom: 5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

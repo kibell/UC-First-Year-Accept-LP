@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
- <!-- First Name Amp 
+<!-- First Name Amp 
   %%[
   var @contact 
   set @contact = QueryParameter('SFID')
@@ -33,6 +33,7 @@ Set @firstnamecombo = @firstname
 ENDIF
   ]%%
 -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +41,7 @@ ENDIF
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Starter Template </title>
+  <title> UC First YR Accept</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -49,9 +50,11 @@ ENDIF
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
   <link
     href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=dc32c8645b2385d544026180d37a5a70eef875e5"
     rel="stylesheet" type="text/css" />
@@ -92,26 +95,26 @@ ENDIF
 
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NXPNK9L4W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NXPNK9L4W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-4NXPNK9L4W');
-</script>
+    gtag('config', 'G-4NXPNK9L4W');
+  </script>
 
-<!-- Hotjar Tracking Code for SNHU Properties -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2360018,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  <!-- Hotjar Tracking Code for SNHU Properties -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2360018, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
 </head>
 
@@ -140,22 +143,319 @@ ENDIF
     </nav>
   </header>
 
-  <!---Meet the New SNHU Term Names-->
 
-  <div class="meet-div text-center d-flex justify-content-center align-items-center">
-  </div>
+  <section class="py-5 welcome-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="welcome-message text-left ">
+            <h1 class="text-white mb-2">Welcome to SNHU %PreferredName% !</h1>
+            <p class="text-white" style="font-size: 24px;">Congratulations on being accepted to Southern New Hampshire
+              University! </p>
+            <br>
+            <p class="text-white">We recommend you bookmark this page and use it to connect to the resources needed to
+              complete your enrollment.</p>
+            <p class="text-white">Remember: our admission team is here to help you at any time.</p>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="academic-message text-left ">
+            <p class="text-white text-bold text-uppercase" style="font-size: 20px;">Academic Program
+              <br><span class="text-normal text-capitilize">Business Administration </span>
+            </p>
+
+            <p class="text-white text-bold text-uppercase" style="font-size: 20px;">YOUR FIRST DAY OF CLASSES
+              <br><span class="text-normal text-capitilize">{{term-start-date}} </span>
+            </p>
+            <p class="text-white text-bold text-uppercase" style="font-size: 20px;">RESIDENT STUDENT OR COMMUTER
+              <br><span class="text-normal text-capitilize">{{resident student or commuter}} </span>
+            </p>
+
+          </div>
+
+          <div class="snhu-bound-wrapper mt-5">
+            <div class="snhu-bound-shadow"></div>
+            <div class="snhu-bound-content">
+              <p class="title">#SNHUBound</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 my-5 admission-checklist">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="admission-img-wrapper position-relative">
+            <img class="admission-video"
+              src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/fdaf4dc4-3b67-415c-be85-42f3f29010cb.png"
+              alt="">
+            <img class="yellow-shape"
+              src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/0d58abff-18df-40f5-be18-e250ab2ab821.png"
+              alt="yellow shape">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>Your Admission checklist:</h3>
+          <div class="checklist-wrapper col-md-12 flex-row d-flex align-items-center mt-3">
+            <div class="col-md-2">
+              <img
+                src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/746f6e26-9af8-4085-832f-c96b93f82dc1.png"
+                alt="">
+            </div>
+            <div class="col-md-7">
+              <div class="text-left admin-title">Enrollment Deposit - Still Needed</div>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-primary">Submit Deposit</button>
+            </div>
+          </div>
+
+          <div class="checklist-wrapper col-md-12 flex-row d-flex align-items-center mt-3">
+            <div class="col-md-2">
+              <img
+                src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/746f6e26-9af8-4085-832f-c96b93f82dc1.png"
+                alt="">
+            </div>
+            <div class="col-md-7">
+              <div class="text-left admin-title">Enrollment Deposit - Still Needed</div>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-primary">Submit Deposit</button>
+            </div>
+          </div>
+
+          <div class="checklist-wrapper col-md-12 flex-row d-flex align-items-center mt-3">
+            <div class="col-md-2">
+              <img
+                src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/746f6e26-9af8-4085-832f-c96b93f82dc1.png"
+                alt="">
+            </div>
+            <div class="col-md-7">
+              <div class="text-left admin-title">Enrollment Deposit - Still Needed</div>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-primary">Submit Deposit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scholarship-section py-5 d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-white text-center">You’ve received the <br> following scholarship(s) <br> Congratulations!
+          </h2>
+        </div>
+        <div class="col-md-6">
+          <div class="text-white">Presidential Scholarship — $4,000 </div>
+          <br>
+          <div class="text-white">Dean Scholarship — $3,000 </div>
+          <br>
+          <div class="text-white">Housing Scholarship — $3,000 </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5"> {PreferredName}, here are your next steps to becoming the newest SNHU campus
+        student:</h2>
+      <div class="row">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item col-md-3 d-flex" role="presentation">
+            <button class="nav-link active" id="visa-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button"
+              role="tab" aria-controls="visa" aria-selected="true">1. Submit your enrollment deposit</button>
+          </li>
+          <li class="nav-item col-md-3 d-flex " role="presentation">
+            <button class="nav-link" id="wellness-tab" data-bs-toggle="tab" data-bs-target="#wellness" type="button"
+              role="tab" aria-controls="wellness" aria-selected="false">2. Complete your FAFSA </button>
+          </li>
+          <li class="nav-item col-md-3 d-flex " role="presentation">
+            <button class="nav-link" id="housing-tab" data-bs-toggle="tab" data-bs-target="#housing" type="button"
+              role="tab" aria-controls="housing" aria-selected="false">3. Join us for an Accepted Student Day or a
+              campus tour</button>
+          </li>
+          <li class="nav-item col-md-3 d-flex " role="presentation">
+            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button"
+              role="tab" aria-controls="review" aria-selected="false">4. Celebrate — you’re accepted and going to SNHU!
+                </button>
+          </li>
+        </ul>
+
+        <!-- Submit your enrollment-->
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row ">
+              <div class="col-md-6 p-5">
+                <p>If you know SNHU is the place for you, submit your $100 enrollment deposit to secure your spot on our
+                  campus!</p>
+                <p>After submitting your enrollment deposit, you’ll soon gain access to next steps such as summer
+                  orientation sign-up, housing selection, course registration and submission of wellness documents.</p>
+                <a href="https://snhuweb.snhu.edu/SNHUPayUser/MakePayment/New-Campus-Student-Enrollment-Deposit?_gl"
+                  class="btn btn-primary" target="_blank">Submit Deposit</a>
+              </div>
+              <div class="col-md-6 p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/a35e023a-2932-490f-8b1e-d8a030e5a142.png"
+                  alt="lady on laptop">
+              </div>
+            </div>
+
+          </div>
+
+          <!--complete FASFA Tab-->
+          <div class="tab-pane fade" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
+            <div class="row ">
+              <div class="col-md-6 p-5">
+                <p>Completing the 2025-26 Free Application for Federal Student Aid (FAFSA) is the only way to receive
+                  full consideration for all forms of institutional financial aid, including need-based grants. We want
+                  to make sure we provide you with the most competitive financial aid package possible!</p>
+                <p>Please make sure to complete the FAFSA as soon as possible. SNHU's school code is
+                  <strong>002580</strong>.</p>
+                <a href="https://studentaid.gov/h/apply-for-aid/fafsa" class="btn btn-primary" target="_blank">Go to
+                  FAFSA</a>
+                <br> <br>
+                <p><strong>Have questions about financial aid or tuition billing?</strong> <br>
+                  Our Student Financial Services (SFS) team is here to help you!
+                </p>
+                <a href="" class="btn btn-primary">Call SFS</a>
+                <a href="" class="btn btn-primary mx-2">Email SFS</a>
+              </div>
+              <div class="col-md-6 p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/f5399a51-4957-493f-a472-fef3e423a8b3.png"
+                  alt="2 people talking">
+              </div>
+            </div>
+          </div>
+
+          <!--ASD campus tour Tab-->
+          <div class="tab-pane fade" id="housing" role="tabpanel" aria-labelledby="housing-tab">
+            <div class="row ">
+              <div class="col-md-6 p-5">
+                <strong >Accepted Student Days</strong>
+                <br> 
+                <p class="mt-2">Accepted Student Day (ASD) is a campus event designed for students who have been accepted to SNHU. Whether you’ve decided SNHU is the college for you or you’re still making your decision, ASD is a great way to learn more about our campus firsthand.
+                </p>
+                <p>
+                  At ASD, you'll be able to: 
+                  <ul>
+                    <li>Experience an academic class</li>
+                    <li>Tour our residence halls</li>
+                    <li>Participate in campus life activities</li>
+                    <li>Explore our student support services</li>
+                    <li>Meet other accepted students</li>
+                  </ul>
+                </p>
+
+                <a href="#" class="btn btn-primary" target="_blank">
+                  Register Now
+                </a>
+
+
+              </div>
+              <div class="col-md-6 p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/156104e4-fad6-45ec-8bdb-2dc852097ff5.png"
+                  alt="group of students">
+              </div>
+
+
+              <hr>
+              <div class="row">
+                <div class="col-md-6 p-5">
+                 <strong>Campus Tours</strong>
+                <br> 
+                <p class="mt-2">Let us show you around SNHU! You’ll get to chat one-on-one with an admission counselor, attend a brief information session and take a one-hour walking tour of campus, which includes stops at our library, dining hall, classrooms, residence hall, campus bookstore and athletics facilities.
+                </p>
+                <p>
+                 Campus tours are Monday – Friday at 10 am and 2 pm, as well as on select weekend dates and evenings.
+                </p>
+
+                <a href="https://cloud.dream.snhu.edu/campus-event-listing-directory" class="btn btn-primary" target="_blank">
+                  Schedule Tour
+                </a>
+
+                </div>
+                <div class="col-md-6  p-5">
+                  <img class="w-100"
+                    src="https://image.dream.snhu.edu/lib/fe9113737461067571/m/1/e8d7580a-3bc0-4152-84b6-6348543e1758.png"
+                    alt="conversation">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Celebrate tab-->
+          <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+            <div class="row ">
+              <div class="col-md-6 p-5">
+                <p>Use the #SNHUbound banner you received in your acceptance package (or take a screenshot of the top of this page) and share it on social media.</p>
+                <br> <br>
+                <strong>Quick Links</strong>
+                <ul>
+                  <li><a href="" target="_blank" class="page-link">Campus home page</a></li>
+                  <li><a href="" target="_blank" class="page-link">Campus admission page</a></li>
+                  <li><a href="" target="_blank" class="page-link">mySNHU platform</a></li>
+                  <li><a href="" target="_blank" class="page-link">Student housing page</a></li>
+                  <li><a href="" target="_blank" class="page-link">Student services page</a></li>
+                </ul>
+              <br>
+                <strong>Contact information</strong>
+                <br> <br>
+                <p>Admission</p>
+                <ul>
+                  <li> Phone: 603.645.9611</li>
+                  <li>Email: <a href="" class="page-link">admission@snhu.edu</a></li>
+                </ul>
+                <br>
+                <p>Student Financial Services</p>
+                <ul>
+                  <li> Phone: 603.645.9611</li>
+                  <li>Email: <a href="" class="page-link">sfscampus@snhu.edu</a></li>
+                </ul>
+
+
+              </div>
+              <div class="col-md-6 p-5">
+                <img class="w-100"
+                  src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/b55479d8-d292-4726-a43c-ea45c8b847f7.png"
+                  alt="group of students">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
   <!--Accreditation-->
 
-  <div role="region" aria-label="Accreditations" class="container-fluid align-items-center text-center py-5 bg-light accreditation">
+  <div role="region" aria-label="Accreditations"
+    class="container-fluid align-items-center text-center py-5 bg-light accreditation">
     <img class="col-10 col-xxl-6"
       src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/da987c7f-9fd4-420f-a9ac-3b64535744f8.png"
       alt="SNHU accreditation logos" width="100%" height="auto">
   </div>
 
-   <!--Footer-->
+  <!--Footer-->
 
-   <footer class="py-5">
+  <footer class="py-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 d-flex justify-content-center align-items-center">
@@ -169,20 +469,20 @@ ENDIF
         </div>
 
         <div class="col-md-4 d-flex justify-content-center align-items-center my-3">
-          <a href="https://www.snhu.edu/" target="_blank"
-          class="link-dark text-decoration-none">
-          <img
-            src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
-            height="80" alt="SNHU logo">
-        </a>
+          <a href="https://www.snhu.edu/" target="_blank" class="link-dark text-decoration-none">
+            <img
+              src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
+              height="80" alt="SNHU logo">
+          </a>
         </div>
 
         <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <p  style="color: #fff;">
+          <p style="color: #fff;">
             © %%=FormatDate(Now(), "yyyy")=%%<br>
             Southern New Hampshire University<br>
-            View our <a href="https://www.snhu.edu/privacy-policy" class="text-link primary-link">Privacy Policy</a> | <a
-              href="https://www.snhu.edu/about-us/accessibility" class="text-link primary-link">Accessibility at SNHU</a>
+            View our <a href="https://www.snhu.edu/privacy-policy" class="text-link primary-link">Privacy Policy</a> |
+            <a href="https://www.snhu.edu/about-us/accessibility" class="text-link primary-link">Accessibility at
+              SNHU</a>
           </p>
         </div>
       </div>

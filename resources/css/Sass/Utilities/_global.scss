@@ -1,7 +1,7 @@
 
 h1 {
   color: $heritage;
-  font-size: $font-size-6xl;
+  font-size: $font-size-7xl;
   font-weight: bold;
   font-family: $inter;
 }
@@ -16,10 +16,10 @@ h2 {
 
 
 h3 {
-  color: $ink-blue;
-  font-size: $font-size-2xl;
+  color: $heritage;
+  font-size: $font-size-4xl;
   font-family: $inter;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 p,
@@ -28,7 +28,7 @@ li {
   font-size: $font-size-md;
   font-weight: 400;
   color: #666666;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 li {
